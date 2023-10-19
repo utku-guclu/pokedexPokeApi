@@ -7,7 +7,7 @@ interface PokemonCardProps {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function PokemonCard({ name, url }: PokemonCardProps) {
   return (
-    <div>
+    <div className="pokemon-card">
       <img src={url} alt="" />
       <p>{name}</p>
     </div>

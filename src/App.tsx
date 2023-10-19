@@ -5,6 +5,10 @@ import PokemonCard from './components/PokemonCard'
 import { getAllPokemons } from './api/getPoke';
 import getPokemonId from './utils/getPokemonId';
 
+// Import Tailwind CSS classes
+import 'tailwindcss/tailwind.css';
+
+
 interface PokemonCardProps {
   name: string,
   url: string
@@ -26,7 +30,7 @@ function App() {
 
   return (
     <>
-      <h1>Pokedex</h1>
+      <h1 className='pokedex'>Pokedex</h1>
       {allPokemons.length > 0 ? (
         <div className="pokemon-cards">
           {allPokemons.map(pokemon => (
